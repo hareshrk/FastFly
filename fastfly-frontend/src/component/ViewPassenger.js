@@ -8,6 +8,7 @@ const columns = [
   { field: 'age', headerName: 'AGE', width: 130 },
   { field: 'gender', headerName: 'GENDER', width: 130 },
   { field: 'email', headerName: 'EMAIL', width: 130 },
+  { field: 'flightid', headerName: 'FLIGHTID', width: 130 },
 ];
 
 export default function ViewPassengers() {
@@ -23,7 +24,7 @@ export default function ViewPassengers() {
 
 
   return (
-    <div style={{ height: 260, width: '40%', margin:'auto', marginBottom:'55px', marginTop:'30px' }}>
+    <div style={{ height: 260, width: '45%', margin:'auto', marginBottom:'55px', marginTop:'30px' }}>
         <h2>Booked Passengers</h2>
       <DataGrid
         rows={studentsArray}

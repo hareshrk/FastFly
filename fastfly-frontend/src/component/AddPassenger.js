@@ -9,10 +9,11 @@ export default function AddPassenger() {
     const [age, setAge] = useState("");
     const [gender, setGender] = useState("");
     const [email, setEmail] = useState("");
+    const [flightid, setFlightid] = useState("");
 
     const submitData =(e) =>{
         e.preventDefault();
-        const studentData = {username,age,gender,email};
+        const studentData = {username,age,gender,email,flightid};
         /**Here, we are using a post request to send data to the api */
         fetch("http://localhost:8080/user/add",
         {
@@ -38,6 +39,7 @@ export default function AddPassenger() {
         <TextField label="age" variant="outlined" onChange={(e)=>setAge(e.target.value)} />
         <TextField label="gender" variant="outlined" onChange={(e)=>setGender(e.target.value)} />
         <TextField label="email" variant="outlined" onChange={(e)=>setEmail(e.target.value)} />
+        <TextField label="flightid" variant="outlined" onChange={(e)=>setFlightid(e.target.value)} />
         <Button sx={{ bgcolor: "red" }} onClick={submitData} style={{padding:"14px"}} font-family='Gruppo' variant="contained">Add Passenger</Button>
   
       </Box>

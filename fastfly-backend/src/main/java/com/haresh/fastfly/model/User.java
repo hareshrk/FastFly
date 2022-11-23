@@ -14,6 +14,9 @@ public class User {
     private Integer age;
     private String gender;
     private String email;
+    private Long flightid;
+
+
 
     public Long getId() {
         return id;
@@ -54,4 +57,8 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public Long getFlightid() {return flightid;}
+
+    public void setFlightid(Long flightid) {this.flightid = flightid;}
 }
