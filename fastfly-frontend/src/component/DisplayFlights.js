@@ -30,8 +30,8 @@ export default function DisplayFlights() {
       <DataGrid
         rows={studentsArray}
         columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
+        pageSize={4}
+        rowsPerPageOptions={[4]}
         checkboxSelection
       />
     </div>

@@ -20,11 +20,11 @@ export default function Appbar() {
             sx={{ mr: 14 }}
           >
           </IconButton>
-          <Typography  variant="h4" component="div" sx={{ flexGrow: 2 }}>
+          <Typography  variant="h7" component="div" sx={{ flexGrow: 1 }}>
             FASTFLY
           </Typography>
           <Button component={Link} to={'/viewpassenger'}font-family='Gruppo' cursive color="inherit">
-            View Passenger
+            View Passengers
             </Button>
         </Toolbar>
       </AppBar>
