@@ -26,7 +26,7 @@ export default function DisplayFlights() {
 
   return (
     <div style={{ height: 320, width: '60%', margin:'auto', marginBottom:'55px', marginTop:'30px' }}>
-        <h2> Flights</h2>
+        <h1> Flights</h1>
       <DataGrid
         rows={studentsArray}
         columns={columns}

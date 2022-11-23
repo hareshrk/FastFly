@@ -13,11 +13,8 @@ function App() {
       <DisplayFlights/>
       <Routes>
       <Route exact path="/viewpassenger" element={<ViewPassengers/>} />
-      
       </Routes>
-
       </Router>
-
     </div>
   );
 }
